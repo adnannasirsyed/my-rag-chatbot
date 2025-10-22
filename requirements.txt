@@ -1,11 +1,25 @@
 streamlit==1.28.1
-sentence-transformers==2.2.2
-faiss-cpu==1.7.4
 openai==1.3.0
+httpx==0.27.0
+
+# --- Core ML / SentenceTransformers Dependencies ---
+# These were the missing libraries
+sentence-transformers==2.2.2
+torch==2.1.0
+transformers==4.30.0
+huggingface-hub==0.17.0
+scikit-learn==1.3.0
+scipy==1.11.0
+tqdm
+
+# --- Vector DB ---
+faiss-cpu==1.7.4
+
+# --- Document Loaders ---
 PyMuPDF==1.23.8
 python-docx==0.8.11
 nbformat==5.9.0
-pypdf2==3.0.1
-httpx==0.27.0
-numpy==1.26.4
-pandas==2.2.2
+
+# --- Data Handling (Pinned as requested) ---
+numpy==1.26.0
+pandas==2.1.0
